@@ -127,6 +127,8 @@ namespace PraktikumADO
         private void txtHasil_TextChanged(object sender, EventArgs e)
         {
         }
+
+        // latihan Praktikum
         private void btnHitungDosen_Click(object sender, EventArgs e)
         {
             try
