@@ -42,5 +42,20 @@ namespace PraktikumADO
         {
 
         }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnHitungMhs_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnConnect_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

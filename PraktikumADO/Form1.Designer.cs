@@ -34,21 +34,23 @@
             // 
             this.btnConnect.Location = new System.Drawing.Point(25, 150);
             this.btnConnect.Name = "btnConnect";
-            this.btnConnect.Size = new System.Drawing.Size(100, 39);
+            this.btnConnect.Size = new System.Drawing.Size(107, 43);
             this.btnConnect.TabIndex = 2;
             this.btnConnect.Text = "Connect";
+            this.btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
             // 
             // btnHitungMhs
             // 
-            this.btnHitungMhs.Location = new System.Drawing.Point(150, 150);
+            this.btnHitungMhs.Location = new System.Drawing.Point(149, 154);
             this.btnHitungMhs.Name = "btnHitungMhs";
-            this.btnHitungMhs.Size = new System.Drawing.Size(89, 39);
+            this.btnHitungMhs.Size = new System.Drawing.Size(113, 39);
             this.btnHitungMhs.TabIndex = 3;
             this.btnHitungMhs.Text = "Hitung Mhs";
+            this.btnHitungMhs.Click += new System.EventHandler(this.btnHitungMhs_Click);
             // 
             // btnHitungMK
             // 
-            this.btnHitungMK.Location = new System.Drawing.Point(260, 150);
+            this.btnHitungMK.Location = new System.Drawing.Point(287, 150);
             this.btnHitungMK.Name = "btnHitungMK";
             this.btnHitungMK.Size = new System.Drawing.Size(127, 39);
             this.btnHitungMK.TabIndex = 4;
@@ -57,11 +59,12 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(428, 158);
+            this.btnUpdate.Location = new System.Drawing.Point(449, 158);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(123, 31);
             this.btnUpdate.TabIndex = 5;
             this.btnUpdate.Text = "Update";
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // txtHasil
             // 
