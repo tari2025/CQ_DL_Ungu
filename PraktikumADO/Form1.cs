@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Data.SqlClient;
-using System.Data.SqlTypes;
 using System.Windows.Forms;
 
 namespace PraktikumADO
@@ -68,5 +67,3 @@ namespace PraktikumADO
                 MessageBox.Show(ex.Message);
             }
         }
-
-        
