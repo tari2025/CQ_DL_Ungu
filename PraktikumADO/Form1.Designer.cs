@@ -68,10 +68,11 @@
             // 
             // txtHasil
             // 
-            this.txtHasil.Location = new System.Drawing.Point(120, 50);
+            this.txtHasil.Location = new System.Drawing.Point(125, 36);
             this.txtHasil.Name = "txtHasil";
             this.txtHasil.Size = new System.Drawing.Size(200, 26);
             this.txtHasil.TabIndex = 1;
+            this.txtHasil.TextChanged += new System.EventHandler(this.txtHasil_TextChanged);
             // 
             // label1
             // 

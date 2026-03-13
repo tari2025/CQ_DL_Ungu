@@ -1,6 +1,7 @@
 ﻿using System;
-using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Data.SqlTypes;
+using System.Windows.Forms;
 
 namespace PraktikumADO
 {
@@ -23,12 +24,18 @@ namespace PraktikumADO
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
+        }
+
+        // Tombol Connect
+        private void btnConnect_Click(object sender, EventArgs e)
+        {
             try
             {
                 Koneksi();
                 conn.Open();
 
-                MessageBox.Show("Koneksi ke database Berhasil");
+                MessageBox.Show("Koneksi ke database berhasil");
 
                 conn.Close();
             }
@@ -38,24 +45,28 @@ namespace PraktikumADO
             }
         }
 
-        private void btnHitungMK_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnUpdate_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        // Hitung jumlah Mahasiswa
         private void btnHitungMhs_Click(object sender, EventArgs e)
         {
+            try
+            {
+                Koneksi();
+                conn.Open();
 
+                string query = "SELECT COUNT(*) FROM Mahasiswa";
+
+                cmd = new SqlCommand(query, conn);
+
+                int jumlah = (int)cmd.ExecuteScalar();
+
+                txtHasil.Text = jumlah.ToString();
+
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
-        private void btnConnect_Click(object sender, EventArgs e)
-        {
-
-        }
-    }
-}
+        
