@@ -89,28 +89,31 @@
             // 
             this.btnHitungDosen.Location = new System.Drawing.Point(125, 223);
             this.btnHitungDosen.Name = "btnHitungDosen";
-            this.btnHitungDosen.Size = new System.Drawing.Size(75, 23);
+            this.btnHitungDosen.Size = new System.Drawing.Size(108, 30);
             this.btnHitungDosen.TabIndex = 6;
             this.btnHitungDosen.Text = "Hitun Dosen";
             this.btnHitungDosen.UseVisualStyleBackColor = true;
+            this.btnHitungDosen.Click += new System.EventHandler(this.btnHitungDosen_Click);
             // 
             // btnUpdateMK
             // 
             this.btnUpdateMK.Location = new System.Drawing.Point(287, 223);
             this.btnUpdateMK.Name = "btnUpdateMK";
-            this.btnUpdateMK.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdateMK.Size = new System.Drawing.Size(101, 30);
             this.btnUpdateMK.TabIndex = 7;
             this.btnUpdateMK.Text = "Update MK";
             this.btnUpdateMK.UseVisualStyleBackColor = true;
+            this.btnUpdateMK.Click += new System.EventHandler(this.btnUpdateMK_Click);
             // 
             // btnInsertProdi
             // 
             this.btnInsertProdi.Location = new System.Drawing.Point(416, 223);
             this.btnInsertProdi.Name = "btnInsertProdi";
-            this.btnInsertProdi.Size = new System.Drawing.Size(75, 23);
+            this.btnInsertProdi.Size = new System.Drawing.Size(106, 30);
             this.btnInsertProdi.TabIndex = 8;
             this.btnInsertProdi.Text = "Insert Prodi";
             this.btnInsertProdi.UseVisualStyleBackColor = true;
+            this.btnInsertProdi.Click += new System.EventHandler(this.btnInsertProdi_Click);
             // 
             // Form1
             // 

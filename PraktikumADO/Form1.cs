@@ -180,7 +180,7 @@ namespace PraktikumADO
                 Koneksi();
                 conn.Open();
 
-                string query = "INSERT INTO ProgramStudi VALUES ('MI01','Manajemen Informatika')";
+                string query = "INSERT INTO ProgramStudi VALUES ('MI00','Manajemen Informatika')";
 
                 cmd = new SqlCommand(query, conn);
 
@@ -194,7 +194,7 @@ namespace PraktikumADO
             {
                 MessageBox.Show(ex.Message);
             }
-        }
 
+        }
     }
 }
